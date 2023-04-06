@@ -15,3 +15,23 @@ print(exampleList[-2]) #bird
 
 #Slices: getting several values form a list
 print(exampleList[1:3]) #['dog', 'fish']
+
+#Changing items in a list
+modifiable_list = [10,20,30,40]
+print(modifiable_list)
+modifiable_list[1] = 21
+print(modifiable_list)
+modifiable_list[1:3] = [23,31]
+print(modifiable_list)
+modifiable_list[:2] = [15,25]
+print(modifiable_list)
+modifiable_list[2:] = [36,41]
+print(modifiable_list)
+
+del modifiable_list[2]
+print(modifiable_list)
+
+str_to_list = list('Hello')
+print(str_to_list)
+
+print(25 in [13,14,66,47,25,33])
