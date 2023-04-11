@@ -22,7 +22,7 @@ numbers_list = [1,55,11,17.1,336,114.2,-99]
 numbers_list.sort()
 print(numbers_list)
 
-
-words_list = ['a', 'cc', 'c', 'zz', 'b']
+#capital letters are sorted before lowercase
+words_list = ['Ant', 'aardvark', 'cat', 'Zebra', 'bat']
 words_list.sort()
 print(words_list)
