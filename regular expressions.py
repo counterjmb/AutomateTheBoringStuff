@@ -38,3 +38,21 @@ greedyDigitRegex = re.compile(r'(\d){3,5}')
 print(greedyDigitRegex.search(search_numbers))
 nonGreedyDigitRegex = re.compile(r'(\d){3,5}?')
 print(nonGreedyDigitRegex.search(search_numbers))
+
+#sub method
+namesRegex = re.compile(r'Agent \w+')
+print(namesRegex.sub('REDACTED','Agent Smith gave the secret documents to Agent Gonzalez'))
+
+#get part of match text
+namesRegex = re.compile(r'Agent (\w)\w*')
+print(namesRegex.sub(r'Agent \1***','Agent Smith gave the secret documents to Agent Gonzalez'))
+
+#verbose method
+# use ''' for multi line pattern
+# verbose allows for comments
+# re.I ignore case
+# re.dotall
+# multiple option: re.I | re.dotall | re.verbose 
+re.compile(r'''
+(\d\d\d)       #comments
+''', re.VERBOSE)

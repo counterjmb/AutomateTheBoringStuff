@@ -46,3 +46,9 @@ print('spamSpamspma'.strip('s'))
 print('Hello'.replace('e','eeee'))
 
 #pyperclip module can manipulate clipboard methods
+
+#String formatting
+name = 'Alice'
+place = '6th Street'
+# %s is the holder, then % with a list of variables in order
+print('Hello %s, please meet me at %s' % (name,place))
